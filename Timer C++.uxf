@@ -29,7 +29,7 @@ bg=yellow</panel_attributes>
       <x>10</x>
       <y>80</y>
       <w>270</w>
-      <h>220</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes>IntNode
 --
@@ -66,9 +66,9 @@ bg=blue</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>10</x>
-      <y>310</y>
-      <w>170</w>
-      <h>80</h>
+      <y>320</y>
+      <w>270</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>Class
 --
@@ -77,6 +77,27 @@ Data Members
 Methods/Constructors
 
 bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>260</y>
+      <w>310</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>IntNodeArray
+--
+-head : IntNode*
+-size : int
+--
++IntNodeArray(int) : constructor
++getSize() : int
++getSize() : int
++getFromIndex(int) : int
++setAtIndex(int index, int value) : void
+bg=black</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

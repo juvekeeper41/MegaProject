@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1972D61E4B726F00E733FC /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1972D41E4B726F00E733FC /* IntNodeArray.cpp */; };
 		1C64F28D1E48D60900FDBFC0 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C64F28B1E48D60900FDBFC0 /* IntNode.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C1972D41E4B726F00E733FC /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
+		1C1972D51E4B726F00E733FC /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		1C64F2781E48D41400FDBFC0 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C64F28B1E48D60900FDBFC0 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		1C64F28C1E48D60900FDBFC0 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -60,6 +63,8 @@
 			children = (
 				1C64F28F1E48D64100FDBFC0 /* Controller */,
 				1C64F28E1E48D61200FDBFC0 /* Model */,
+				1C1972D41E4B726F00E733FC /* IntNodeArray.cpp */,
+				1C1972D51E4B726F00E733FC /* IntNodeArray.hpp */,
 			);
 			path = MegaProject;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C64F28D1E48D60900FDBFC0 /* IntNode.cpp in Sources */,
+				1C1972D61E4B726F00E733FC /* IntNodeArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +270,7 @@
 				1C64F2811E48D41400FDBFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
