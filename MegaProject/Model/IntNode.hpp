@@ -12,8 +12,8 @@
 class IntNode
 {
 private:
-    int NodeData;
-    IntNode * NodePointer;
+    int nodeData;
+    IntNode * nodePointer;
 public:
     //Constructors
     IntNode();
@@ -26,6 +26,7 @@ public:
     //Methods
     int getNodeData();
     IntNode * getNodePointer();
+    
     void setNodeData(int value);
     void setNodePointer(IntNode * updatedNode);
     
