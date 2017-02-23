@@ -100,4 +100,64 @@ bg=pink</panel_attributes>
 bg=black</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>80</y>
+      <w>510</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>Array&lt;Type&gt;
+--
+-front : Node&lt;Type&gt; *
+-size : int
+--
++Array() : default constructor
++Array&lt;Type&gt;(int size) : constructor
+
++ ~Array&lt;Type&gt;() : destructor
++ Array&lt;Type&gt;(const Array&lt;Type&gt; &amp; toBeCopied) : copy constructor
+
++getSize() const : int
++getFront() const : Node&lt;Type&gt; *
+
++getFromIndex(int index) : Type
++setAtIndex(int index, Type value) : void
+
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>420</y>
+      <w>510</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Model :: List&lt;Type&gt;
+--
+- size : int
+- front : Node&lt;Type&gt; *
+
+--
++List&lt;Type&gt;() : constructor
++List&lt;Type&gt;(const List&lt;Type&gt; &amp; source) : copy constructor
++ ~List&lt;Type&gt;() : destructor
+
++ addAtIndex(int index, Type value) : void
++ add(Type value) : void
++ remove(int index) : Type
++ setAtIndex(int index, Type data) : Type
++ getFromIndex(int index) : Type
++ contains(Type data) : bool
++ getSize() const : int
++ getFront() const : Node&lt;Type&gt; *
+
+bg=orange
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

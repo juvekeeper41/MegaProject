@@ -8,7 +8,7 @@
 
 #ifndef IntNodeArray_hpp
 #define IntNodeArray_hpp
-#include "IntNode.cpp"
+#include "IntNode.hpp"
 
 class IntNodeArray
 {
@@ -18,7 +18,8 @@ private:
 public:
     IntNodeArray(int bigness);
     int getSize();
-    int getFromIndex(int index, int value);
+    int getFromIndex(int index);
+    void setAtIndex(int index, int value);
 };
 
 #endif /* IntNodeArray_hpp */
