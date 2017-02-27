@@ -38,7 +38,6 @@ public:
     int getSize() const
     Node<Type> * getFront() const
     
-    
 };
 
 template <class Type>

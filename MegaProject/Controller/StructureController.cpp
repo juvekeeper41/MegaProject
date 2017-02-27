@@ -8,6 +8,7 @@
 
 #include "IntNodeArray.hpp"
 #include "StructureController.hpp"
+#include ".../Model/List.h"
 #include <iostream>
 using namespace std;
 
@@ -31,4 +32,16 @@ void StructureController :: start()
     cout << "Going to test the IntNodeArray" << endl;
     testIntArray();
     cout << "Finished Int Array Node Testing" << endl;
+}
+
+void StructureController :: testListIntro()
+{
+    List<int> sample;
+    sample.addFront(2);
+    sample.addFront(3);
+    sample.addFront(1);
+    cout << sample.getFromIndex(index) << endl;
+    
+    for(int)
+    
 }
