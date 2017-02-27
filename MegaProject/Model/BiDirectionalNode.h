@@ -37,7 +37,7 @@ BiDirectionalNode :: BiDirectionalNode() : Node()
 }
 
 template <class Type>
-BiDirectionalNode :: BiDirectionalNode() : Node(data)
+BiDirectionalNode :: BiDirectionalNode(Type data) : Node(data)
 {
     
 }
