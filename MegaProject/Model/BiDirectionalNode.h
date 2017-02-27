@@ -28,6 +28,19 @@ public:
     void setNodeData(Type data);
     void setNextPointer(BiDirectionalNode<Type> * next);
     void setPreviousPointer(BiDirectionalNode<Type> * previous);
-    
 };
+
+template <class Type>
+BiDirectionalNode :: BiDirectionalNode() : Node()
+{
+    
+}
+
+template <class Type>
+BiDirectionalNode :: BiDirectionalNode() : Node(data)
+{
+    
+}
+
+
 #endif /* BiDirectionalNode_h */
