@@ -37,6 +37,7 @@
 		1C2FCFB51E648197008AE69A /* IntNodeArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = ../../../../.Trash/Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		1C2FCFB61E6481D6008AE69A /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = ../../../../.Trash/Model/Timer.cpp; sourceTree = "<group>"; };
 		1C2FCFB81E6481E9008AE69A /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = ../../../../.Trash/Model/Timer.hpp; sourceTree = "<group>"; };
+		1C2FCFBA1E648D24008AE69A /* BiDirectionalNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BiDirectionalNode.h; path = Model/BiDirectionalNode.h; sourceTree = "<group>"; };
 		1C64F2781E48D41400FDBFC0 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +86,7 @@
 				1C2FCFB01E648139008AE69A /* List.h */,
 				1C2FCFAE1E648112008AE69A /* IntNode.cpp */,
 				1C2FCFB21E64817A008AE69A /* IntNode.hpp */,
+				1C2FCFBA1E648D24008AE69A /* BiDirectionalNode.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
