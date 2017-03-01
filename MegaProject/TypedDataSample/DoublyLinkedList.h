@@ -34,5 +34,12 @@ public:
     BiDirectionalNode<Type> * getEnd() const;
 };
 
+template <class Type>
+DoublyLinkedList<Type> :: DoublyLinkedList()
+{
+    this->size = 0;
+    this->front = nullptr;
+    this->end = nullptr;
+}
 
 #endif /* DoublyLinkedList_h */
