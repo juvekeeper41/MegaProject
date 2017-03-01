@@ -41,6 +41,8 @@
 		1C64F2781E48D41400FDBFC0 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C65ED901E67290F00C79527 /* DoublyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoublyLinkedList.h; path = TypedDataSample/DoublyLinkedList.h; sourceTree = "<group>"; };
 		1C65ED921E6730C800C79527 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		1C65ED931E6731DA00C79527 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		1C65ED941E6731FC00C79527 /* CircularlyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularlyLinkedList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,8 @@
 			children = (
 				1C65ED901E67290F00C79527 /* DoublyLinkedList.h */,
 				1C65ED921E6730C800C79527 /* Stack.h */,
+				1C65ED931E6731DA00C79527 /* Queue.h */,
+				1C65ED941E6731FC00C79527 /* CircularlyLinkedList.h */,
 			);
 			name = TypedDataSample;
 			sourceTree = "<group>";
