@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>340</x>
-      <y>290</y>
+      <y>280</y>
       <w>310</w>
       <h>170</h>
     </coordinates>
@@ -29,7 +29,7 @@ fg=white</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>60</x>
-      <y>130</y>
+      <y>120</y>
       <w>270</w>
       <h>230</h>
     </coordinates>
@@ -57,7 +57,7 @@ fg=white</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>60</x>
-      <y>60</y>
+      <y>50</y>
       <w>190</w>
       <h>60</h>
     </coordinates>
@@ -72,7 +72,7 @@ fg=white</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>60</x>
-      <y>370</y>
+      <y>360</y>
       <w>270</w>
       <h>90</h>
     </coordinates>
@@ -91,7 +91,7 @@ fg=white</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>340</x>
-      <y>130</y>
+      <y>120</y>
       <w>310</w>
       <h>150</h>
     </coordinates>
@@ -114,7 +114,7 @@ fg=white</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>660</x>
-      <y>130</y>
+      <y>120</y>
       <w>610</w>
       <h>330</h>
     </coordinates>
@@ -144,7 +144,7 @@ fg=white</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>660</x>
-      <y>470</y>
+      <y>460</y>
       <w>610</w>
       <h>310</h>
     </coordinates>
@@ -178,7 +178,7 @@ fg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>640</x>
-      <y>130</y>
+      <y>120</y>
       <w>240</w>
       <h>80</h>
     </coordinates>
@@ -191,7 +191,7 @@ bg=black</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1010</x>
-      <y>130</y>
+      <y>120</y>
       <w>250</w>
       <h>370</h>
     </coordinates>
@@ -204,7 +204,7 @@ bg=black</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>60</x>
-      <y>470</y>
+      <y>460</y>
       <w>590</w>
       <h>310</h>
     </coordinates>
@@ -234,7 +234,7 @@ fg=white</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>60</x>
-      <y>790</y>
+      <y>780</y>
       <w>590</w>
       <h>360</h>
     </coordinates>
@@ -265,7 +265,7 @@ fg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>340</x>
-      <y>490</y>
+      <y>480</y>
       <w>310</w>
       <h>320</h>
     </coordinates>
@@ -278,7 +278,7 @@ bg=black</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>660</x>
-      <y>790</y>
+      <y>780</y>
       <w>610</w>
       <h>360</h>
     </coordinates>
@@ -306,7 +306,7 @@ fg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>440</x>
-      <y>790</y>
+      <y>780</y>
       <w>450</w>
       <h>30</h>
     </coordinates>
@@ -319,34 +319,34 @@ bg=black</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1260</x>
-      <y>820</y>
-      <w>180</w>
-      <h>110</h>
+      <y>630</y>
+      <w>150</w>
+      <h>290</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 
 fg=white
 bg=black</panel_attributes>
-    <additional_attributes>10.0;90.0;160.0;10.0</additional_attributes>
+    <additional_attributes>10.0;270.0;130.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1260</x>
-      <y>950</y>
-      <w>180</w>
-      <h>30</h>
+      <y>830</y>
+      <w>150</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 fg=white
 bg=black</panel_attributes>
-    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+    <additional_attributes>10.0;120.0;130.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>220</x>
-      <y>130</y>
+      <y>120</y>
       <w>140</w>
       <h>190</h>
     </coordinates>
@@ -359,24 +359,38 @@ bg=black</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1260</x>
-      <y>1000</y>
-      <w>180</w>
+      <y>990</y>
+      <w>150</w>
       <h>130</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 fg=white
 bg=black</panel_attributes>
-    <additional_attributes>10.0;10.0;160.0;110.0</additional_attributes>
+    <additional_attributes>10.0;10.0;130.0;110.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1420</x>
-      <y>790</y>
-      <w>150</w>
-      <h>90</h>
+      <x>1390</x>
+      <y>560</y>
+      <w>290</w>
+      <h>230</h>
     </coordinates>
-    <panel_attributes>Queue
+    <panel_attributes>Model :: Queue
+--
+- front : BiDirectionalNode&lt;Type&gt; *
+- end : BiDirectionalNode&lt;Type&gt; *
+- size : int
+--
++ Queue() : constructor
++ ~Queue() : destructor
+
++ add(Type data) : void
++ remove(int index) : Type
+
++ enqueue(Type data) : void
++ dequeue() : Type
++ peek() : Type
 
 bg=black
 transparency=1
@@ -386,13 +400,27 @@ fg=white</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1420</x>
-      <y>920</y>
-      <w>150</w>
-      <h>90</h>
+      <x>1390</x>
+      <y>800</y>
+      <w>290</w>
+      <h>240</h>
     </coordinates>
-    <panel_attributes>Stack
+    <panel_attributes>Model :: Stack&lt;Type&gt;
+--
+- front: BiDirectionalNode&lt;Type&gt; *
+- end: BiDirectionalNode&lt;Type&gt; *
+- size : int
 
+--
++ Stack() : constructor
++ ~Stack() : destructor
+
++ push(Type data) : void
++ pop() : Type
++ peek() : Type
+
++ add(Type data) : void
++ remove(int index) : Type
 bg=black
 transparency=1
 fg=white</panel_attributes>
@@ -401,12 +429,22 @@ fg=white</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1420</x>
-      <y>1060</y>
-      <w>150</w>
-      <h>90</h>
+      <x>1390</x>
+      <y>1050</y>
+      <w>290</w>
+      <h>170</h>
     </coordinates>
-    <panel_attributes>CircularlyLinkedList
+    <panel_attributes>Model :: CircularlyLinkedList
+--
+- front: BiDirectionalNode&lt;Type&gt;*
+- end: BIDirectionalNode&lt;Type&gt;*
+- size: int
+--
++ CircularList() : constructor
++ ~CircularList() : destructor
+
++ add(Type data) : void
++ remmove(int index, Type data) : void
 
 bg=black
 transparency=1
@@ -418,8 +456,8 @@ fg=white</panel_attributes>
     <coordinates>
       <x>0</x>
       <y>0</y>
-      <w>1680</w>
-      <h>1230</h>
+      <w>2030</w>
+      <h>1580</h>
     </coordinates>
     <panel_attributes>bg=gray
 transparency=0</panel_attributes>

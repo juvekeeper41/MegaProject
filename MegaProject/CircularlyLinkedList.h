@@ -9,5 +9,12 @@
 #ifndef CircularlyLinkedList_h
 #define CircularlyLinkedList_h
 
+#include "DoublyLinkedList.hpp"
+
+template <class Type>
+class CircularlyLinkedList : public DoublyLinkedList<Type>
+{
+
+};
 
 #endif /* CircularlyLinkedList_h */
