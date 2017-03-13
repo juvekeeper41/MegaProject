@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C1972DA1E4B7DE500E733FC /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1972D91E4B7DE500E733FC /* Runner.cpp */; };
 		1C1972DD1E4B7DF700E733FC /* StructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1972DB1E4B7DF700E733FC /* StructureController.cpp */; };
+		1C216ED71E76DA4C0069ECF3 /* Meme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C216ED51E76DA4C0069ECF3 /* Meme.cpp */; };
 		1C2FCFAF1E648112008AE69A /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FCFAE1E648112008AE69A /* IntNode.cpp */; };
 		1C2FCFB41E648188008AE69A /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FCFB31E648188008AE69A /* IntNodeArray.cpp */; };
 		1C2FCFB71E6481D6008AE69A /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FCFB61E6481D6008AE69A /* Timer.cpp */; };
@@ -30,6 +31,9 @@
 		1C1972D91E4B7DE500E733FC /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = "<group>"; };
 		1C1972DB1E4B7DF700E733FC /* StructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StructureController.cpp; path = Controller/StructureController.cpp; sourceTree = "<group>"; };
 		1C1972DC1E4B7DF700E733FC /* StructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StructureController.hpp; path = Controller/StructureController.hpp; sourceTree = "<group>"; };
+		1C216ED51E76DA4C0069ECF3 /* Meme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Meme.cpp; path = Model/Meme.cpp; sourceTree = "<group>"; };
+		1C216ED61E76DA4C0069ECF3 /* Meme.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Meme.hpp; path = Model/Meme.hpp; sourceTree = "<group>"; };
+		1C216ED81E76E2A00069ECF3 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Node.h; path = Model/Node.h; sourceTree = "<group>"; };
 		1C2FCFAE1E648112008AE69A /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = ../../../../.Trash/IntNode.cpp; sourceTree = "<group>"; };
 		1C2FCFB01E648139008AE69A /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = ../../../../.Trash/List.h; sourceTree = "<group>"; };
 		1C2FCFB21E64817A008AE69A /* IntNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = ../../../../.Trash/Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -105,6 +109,9 @@
 				1C2FCFAE1E648112008AE69A /* IntNode.cpp */,
 				1C2FCFB21E64817A008AE69A /* IntNode.hpp */,
 				1C2FCFBA1E648D24008AE69A /* BiDirectionalNode.h */,
+				1C216ED51E76DA4C0069ECF3 /* Meme.cpp */,
+				1C216ED61E76DA4C0069ECF3 /* Meme.hpp */,
+				1C216ED81E76E2A00069ECF3 /* Node.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 				1C1972DA1E4B7DE500E733FC /* Runner.cpp in Sources */,
 				1C2FCFB41E648188008AE69A /* IntNodeArray.cpp in Sources */,
 				1C1972DD1E4B7DF700E733FC /* StructureController.cpp in Sources */,
+				1C216ED71E76DA4C0069ECF3 /* Meme.cpp in Sources */,
 				1C2FCFB71E6481D6008AE69A /* Timer.cpp in Sources */,
 				1C2FCFAF1E648112008AE69A /* IntNode.cpp in Sources */,
 			);
