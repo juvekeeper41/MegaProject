@@ -48,6 +48,7 @@
 		1C65ED921E6730C800C79527 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		1C65ED931E6731DA00C79527 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		1C65ED941E6731FC00C79527 /* CircularlyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularlyLinkedList.h; sourceTree = "<group>"; };
+		1CE5E9A51E841E4B00AB632B /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Model/Array.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +113,7 @@
 				1C216ED51E76DA4C0069ECF3 /* Meme.cpp */,
 				1C216ED61E76DA4C0069ECF3 /* Meme.hpp */,
 				1C216ED81E76E2A00069ECF3 /* Node.h */,
+				1CE5E9A51E841E4B00AB632B /* Array.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
