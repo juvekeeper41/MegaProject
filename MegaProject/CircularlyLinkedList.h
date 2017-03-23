@@ -14,7 +14,9 @@
 template <class Type>
 class CircularlyLinkedList : public DoublyLinkedList<Type>
 {
-
+private:
+public:
+    
 };
 
 #endif /* CircularlyLinkedList_h */

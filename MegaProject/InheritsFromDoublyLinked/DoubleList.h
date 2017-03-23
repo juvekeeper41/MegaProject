@@ -63,4 +63,18 @@ Type DoubleList<Type> :: getFromindexFast(int index)
     return valueAtIndex;
 }
 
+//Loop over structure
+//Compare Node's data to parameter
+//If they match, return index to count of loop
+//Else continue
+//Return invalid/not in list
+
+template <class Type>
+int DoubleList<Type> :: indexOf(Type findMe)
+{
+    int index = -1;
+    
+    return index;
+}
+
 #endif /* DoubleList_h */
