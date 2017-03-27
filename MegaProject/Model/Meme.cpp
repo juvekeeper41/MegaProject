@@ -64,4 +64,18 @@ void Meme :: setMainstream(bool isMain)
     this->mainstream = isMain;
 }
 
+bool Meme :: operator < (const Meme & comparedMeme) const
+{
+    if(this->isMainstream() && comparedMeme.isMainstream())
+    {
+        if(this->getDankness() < comparedMeme.getDankness())
+        {
+        return true;
+        }
+        return false;
+    }
+    
+        return false;
+}
+
 

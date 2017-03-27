@@ -31,6 +31,10 @@ public:
     void setHipsterQuotient(double  hipsterQuotient);
     void setMainstream(bool mainstream);
     
+    bool operator < (const Meme & compared) const;
+    bool operator > (const Meme & compared) const;
+    bool operator == (const Meme & compared) const;
+    
 };
 
 #include <stdio.h>
