@@ -67,13 +67,23 @@ DoubleList<Meme> FileController :: readMemeDataFromFileAsAList(string filename)
     return dataSource;
 }
 
-//void FileController :: writeDataStatistics(DoubleInt)
-//{
-//    ofstream saveFile(filename);
-//    
-//    if(saveFile.is_open())
-//    {
-//        saveFile << "These are e contents of the list" << endl;
-//    }
-//}
+void FileController :: writeDataStatistics(DoubleList<Meme> dataSource, string filename)
+{
+    ofstream saveFile(filename);
+    
+    if(saveFile.is_open())
+    {
+        saveFile << "These are the contents of the list" << endl;
+        for(int index = 0; index < dataSource.getSize(); index++)
+        {
+            saveFile << "Meme Title: " << dataSource.getFromIndex(index) << endl;
+            
+        }
+        else
+        {
+            cerr << "File Unavailable" << endl;
+        }
+        saveFile.close();
+    }
+}
 
