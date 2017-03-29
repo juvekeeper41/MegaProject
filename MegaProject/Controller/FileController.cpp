@@ -41,7 +41,16 @@ DoubleList<Meme> FileController :: readMemeDataFromFileAsAList(string filename)
             //Exclude first row headers
             if(rowCount !=0)
             {
+                quotient = stod(tempHipster);
+                dankness = stoi(tempDank);
+                isCommon = stoi(tempMainstream);
                 
+                Meme temp(title);
+                temp.setHipsterQuotient(quotient);
+                temp.setDankness(dankness);
+                temp.setMainstream(isCommon);
+                
+                dataSource.add(temp);
             }
             
             rowCount++;
@@ -50,5 +59,21 @@ DoubleList<Meme> FileController :: readMemeDataFromFileAsAList(string filename)
         }
         dataFile.close();
     }
+    else
+    {
+        cerr << "NO FILE" << endl;
+    }
+    
+    return dataSource;
 }
+
+//void FileController :: writeDataStatistics(DoubleInt)
+//{
+//    ofstream saveFile(filename);
+//    
+//    if(saveFile.is_open())
+//    {
+//        saveFile << "These are e contents of the list" << endl;
+//    }
+//}
 
