@@ -10,6 +10,7 @@
 
 CrimeData :: CrimeData()
 {
+    
 }
 
 string CrimeData :: getDepartment() const
