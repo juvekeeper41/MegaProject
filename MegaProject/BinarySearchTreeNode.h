@@ -33,5 +33,51 @@ public:
     
 };
 
+template <classType>
+BinarySearchTreeNode :: BinarySearchTreeNode()
+{
+    this->root = nullptr;
+    this->rightChild = nullptr;
+    this->leftChild = nullptr;
+}
+
+template <class Type>
+BinarySearchTreeNode<Type> :: BinarySearchTreeNode(Type data) : Node<Type>(data)
+{
+    this->root = nullptr;
+    this->leftChild = nullptr;
+    this->rightChild = nullptr;
+}
+
+template <class Type>
+BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getLeftChild()
+{
+    return this->leftChild;
+}
+
+template <class Type>
+BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getRightChild()
+{
+    return this->rightChild;
+}
+
+template <class Type>
+void BinarySearchTreeNode<Type> :: setRootPointer(BinarySearchTreeNode<Type>* right)
+{
+    this->leftChild = right;
+}
+
+template <class Type>
+void BinarySearchTreeNode<Type> :: setLeftChild(BinarySearchTreeNode<Type>* left)
+{
+    this->leftChild = left;
+}
+
+template <class Type>
+void BinarySearchTreeNode<Type> :: setRightChild(BinarySearchTreeNode<Type>* right)
+{
+    this->rightChild = right;
+}
+
 
 #endif /* BinarySearchTreeNode_h */
