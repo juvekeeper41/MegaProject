@@ -50,6 +50,8 @@
 		1C65ED921E6730C800C79527 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		1C65ED931E6731DA00C79527 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		1C65ED941E6731FC00C79527 /* CircularlyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularlyLinkedList.h; sourceTree = "<group>"; };
+		1C9326D61E9D1F0900037B24 /* BinarySearchTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinarySearchTreeNode.h; sourceTree = "<group>"; };
+		1C9326D71E9D1F4100037B24 /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryTreeNode.h; path = Nodes/BinaryTreeNode.h; sourceTree = "<group>"; };
 		1CE462781E8BF0AB0029782E /* FileController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileController.h; path = Controller/FileController.h; sourceTree = "<group>"; };
 		1CE462791E8BF5450029782E /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Model/CrimeData.cpp; sourceTree = "<group>"; };
 		1CE4627B1E8BF55A0029782E /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Model/CrimeData.hpp; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				1C64F28E1E48D61200FDBFC0 /* Model */,
 				1C2FCFB31E648188008AE69A /* IntNodeArray.cpp */,
 				1C2FCFB51E648197008AE69A /* IntNodeArray.hpp */,
+				1C9326D41E9D1ED200037B24 /* Nodes */,
 			);
 			path = MegaProject;
 			sourceTree = "<group>";
@@ -117,10 +120,8 @@
 				1C2FCFB01E648139008AE69A /* List.h */,
 				1C2FCFAE1E648112008AE69A /* IntNode.cpp */,
 				1C2FCFB21E64817A008AE69A /* IntNode.hpp */,
-				1C2FCFBA1E648D24008AE69A /* BiDirectionalNode.h */,
 				1C216ED51E76DA4C0069ECF3 /* Meme.cpp */,
 				1C216ED61E76DA4C0069ECF3 /* Meme.hpp */,
-				1C216ED81E76E2A00069ECF3 /* Node.h */,
 				1CE5E9A51E841E4B00AB632B /* Array.h */,
 			);
 			name = Model;
@@ -137,6 +138,17 @@
 				1C54F8C01E69C8F300AB8193 /* Inherits From DoublyLinked */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		1C9326D41E9D1ED200037B24 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1C216ED81E76E2A00069ECF3 /* Node.h */,
+				1C2FCFBA1E648D24008AE69A /* BiDirectionalNode.h */,
+				1C9326D61E9D1F0900037B24 /* BinarySearchTreeNode.h */,
+				1C9326D71E9D1F4100037B24 /* BinaryTreeNode.h */,
+			);
+			name = Nodes;
 			sourceTree = "<group>";
 		};
 		1CDAE2071E5C8EA1004A870B /* TypedDataSample */ = {
