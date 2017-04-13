@@ -485,7 +485,7 @@ fg=white</panel_attributes>
     <coordinates>
       <x>630</x>
       <y>1170</y>
-      <w>620</w>
+      <w>610</w>
       <h>370</h>
     </coordinates>
     <panel_attributes>BinarySearchTreeNode&lt;Type&gt;
@@ -495,6 +495,7 @@ fg=white</panel_attributes>
 -leftChildPointer : BinarySearhTreeNode&lt;Type&gt; *
 -rightChildPointer : BinarySearchTreeNode&lt;Type&gt; *
 --
+
 
 +getRootPointer() : BinarySearchTreeNode&lt;Type&gt; *
 +getLeftChildPointer() : BinarySearchTreeNode&lt;Type&gt; *
@@ -517,7 +518,8 @@ fg=white</panel_attributes>
       <w>2510</w>
       <h>1880</h>
     </coordinates>
-    <panel_attributes>bg=black</panel_attributes>
+    <panel_attributes>bg=black
+transparency = 0</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -563,7 +565,7 @@ fg=white
       <x>30</x>
       <y>1550</y>
       <w>590</w>
-      <h>280</h>
+      <h>320</h>
     </coordinates>
     <panel_attributes>Model :: BinarySearchTree&lt;Type&gt;
 --
@@ -573,6 +575,9 @@ fg=white
 -complete : bool(inherited)
 -balanced : bool(inherited)
 --
+
++BinarySearchTree() : constructor
++ ~BinarySearchTree() : destrcutor
 
 +getRoot() : BinarySearchTreeNode&lt;Type&gt; *
 +setRoot(BinarySearchTreeNode&lt;Typ&gt; * root) : void

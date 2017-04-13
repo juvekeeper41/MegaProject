@@ -16,8 +16,10 @@ class BinarySearchTreeNode : public Node<Type>
 {
 private:
     BinarySearchTreeNode<Type> * root;
-    BinarySearchTreeNode<Type> * leftChild;
-    BinarySearchTreeNode<Type> * rightChild;
+    
+    int calculateSize(BinarySearchTreeNode<Type> * root);
+    void inOrderTraversal(BinarySearchTreeNode<Type> * inStart);
+    void preOrderTraversal(BinarySearchTreeNode<Type> * postStart);
     
 public:
     BinarySearchTreeNode();
