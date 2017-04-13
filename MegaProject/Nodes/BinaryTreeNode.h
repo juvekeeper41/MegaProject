@@ -270,6 +270,49 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
                 
                 delete temp;
             }
+            //Has only right child
+            else if(removeMe->getRightChild() == nullptr)
+            {
+                temp = removeMe;
+                removeMe->getLeftChild();
+                
+                if(previous != nullptr && removeMe->etNodeData() < previous->getNodeData())
+                {
+                    previous->setLeftChild(removeMe);
+                }
+                else if(previous != nullptr && removeMe->getNodeData() > previous->getNodeData())
+                {
+                    previous->setRightChild(removeMe);
+                }
+                
+                removeMe->setRootPointer(previous);
+                delete temp;
+            }
+            //Has both children
+            else
+            {
+                current = removeMe->getLeftChild();
+                previous = nullptr;
+                
+                while(current->getRightChild() != nullptr)
+                {
+                    previous = current;
+                    current = current->getRightChild();
+                }
+                
+                removeMe->setNodeData(current->getNodeData());
+                
+                if(previous == nullptr)
+                {
+                    removeMe->setLeftChild(current->getLeftChild());
+                    current->getLeftChild()->setRootPointer(removeMe);
+                }
+                else
+                {
+                    previous->setRightChild(current->getLeftChild());
+                    current->getLeftChild()->setRootPointer(previous);
+                }
+            }
         }
     }
 }
