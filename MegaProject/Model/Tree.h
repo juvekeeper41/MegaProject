@@ -9,7 +9,7 @@
 #ifndef Tree_h
 #define Tree_h
 
-#inlude <assert.h>
+#include <assert.h>
 
 template <class Type>
 class Tree
