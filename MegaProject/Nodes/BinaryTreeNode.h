@@ -78,6 +78,12 @@ void BinarySearchTree<Type> :: preOrderTraversal()
 template <class Type>
 void BinarySearchTree<Type> :: inOrderTraversal()
 {
+    inOrderTraversal(root);
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal()
+{
     
 }
 
@@ -88,15 +94,36 @@ int BinarySearchTree<Tree> :: calculateSize(BinarySearchTreeNode<Type> * start)
 }
 
 template <class Type>
-void BinarySearchTree<Type> :: inOrderTraveersal(BinarySearchTreeNode<Type> * inStart)
+void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inStart)
 {
+    if(inStart !=nullptr)
+    {
+        inOrderTraversal(inStart->getLeftChild());
+        cout << "Node Contents: " << inStart->getNodeData() << endl;
+        inOrderTraversal(inStart->getRightChild());
+    }
     
+    else
+    {
+        return;
+    }
 }
 
+/*
+ Pre order traversal goes in the order Root, Left, Right
+ Notice that the non-recursive case does NOTHING
+ */
+
 template <class Type>
-void BinarySearchTree :: preOrderTraversal(BinarySearchTreeNode<Type> * preStart)
+void BinarySearchTree<Type> :: preOrderTraversal(BinarySearchTreeNode<Type> * preStart)
 {
-    
+    if(preStart != nullptr)
+    {
+       
+        inOrderTraversal(preStart->getLeftChild());
+        inOrderTraversal(preStart->getRightChild());
+        cout << "Node Contents: " << postStart->getNodeData() << endl;
+    }
 }
 
 template <class Type>
