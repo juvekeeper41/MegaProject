@@ -29,6 +29,7 @@ private:
     Node<sttring> wordNode;
     Array<int> numberArray;
     
+    void structureTester();
     void testNodeTypes();
     void testIntArray();
     void testArrayTemplate();

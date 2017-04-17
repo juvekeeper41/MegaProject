@@ -27,7 +27,7 @@ protected:
     void preOrderTraversal(BinarySearchTreeNode<Type> * preStart);
     void postOrderTraversal(BinarySearchTreeNode<Type> * postStart);
     
-    void removeNode(BinarySearchTreeNode<Type> * & removeMe);
+    void removeNode(BinarySearchTreeNode<Type> * removeMe);
     
 public:
     BinarySearchTree();
@@ -50,12 +50,19 @@ public:
 };
 
 template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTreeNode()
+{
+    delete this->leftChild;
+    delete this->rightChild;
+}
+
+template <class Type>
 BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
 {
     this->root = nullptr;
 }
 
-template <class Typee>
+template <class Type>
 BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 {
     return this->root;

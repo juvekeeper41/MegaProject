@@ -35,12 +35,19 @@ public:
     
 };
 
-template <classType>
-BinarySearchTreeNode :: BinarySearchTreeNode()
+template <class Type>
+BinarySearchTreeNode :: ~BinarySearchTreeNode()
+{
+    delete leftChild;
+    delete rightChild;
+}
+
+template <class Type>
+BinarySearchTreeNode<Type> :: BinarySearchTreeNode() : Node<Type>()
 {
     this->root = nullptr;
-    this->rightChild = nullptr;
     this->leftChild = nullptr;
+    this->rightChild = nullptr;
 }
 
 template <class Type>
