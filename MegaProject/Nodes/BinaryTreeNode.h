@@ -15,11 +15,15 @@
 template <class Type>
 class BinarySearchTree : public Tree<Type>
 {
-private:
+protected:
     BinarySearchTreeNode<Type> * root;
     
     int calculateSize(BinarySearchTreeNode<Type> * root);
-    void inOrderTraversal(BinarySearchTreenode<Type> * start);
+    int calculateHeight(BinarySearchTreeNode<Type> * root);
+    bool isBalanced(BinarySearchTreeNode<Type> * root);
+    bool isComplete(BinarySearchTreeNode<Type> * root);
+    
+    void inOrderTraversal(BinarySearchTreeNode<Type> * inStart);
     void preOrderTraversal(BinarySearchTreeNode<Type> * preStart);
     void postOrderTraversal(BinarySearchTreeNode<Type> * postStart);
     
@@ -90,7 +94,56 @@ void BinarySearchTree<Type> :: inOrderTraversal()
 template <class Type>
 int BinarySearchTree<Tree> :: calculateSize(BinarySearchTreeNode<Type> * start)
 {
-    return -99;
+    int count = 1;
+    if(start == nullptr)
+    {
+        return 0;
+    }
+    else
+    {
+        count += calculateSize(start->getLeftChild());
+        count += calclateSize(start->getRightChild());
+        return count;
+    }
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: calculateHeight(BinarySearchTreeNode<Type> * start)
+{
+    if(start == nullptr)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1 + max(calculateHeight(start->getLeftChild()), calculateHeight(start-> getRightChild()));
+    }
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isBalanced(BinarySearchTreeNode<Type> * start)
+{
+    int leftHeight = 0;
+    int rightHeight = 0;
+    
+    if(start == nullptr)
+    {
+        return true;
+    }
+    
+    leftHeight = calculateHeight(start->getLeftChild());
+    rightHeight = calculateHeight(start->getRightChild());
+    
+    int heightDifference = abs(leftHeight->rightHeight);
+    bool leftBalanced = isBalanced(start->getLeftChild());
+    bool rightBalanced = isBalanced(start->getRightChild());
+    
+    if(heightDifference <= 1 && leftBalanced && rightBalanced)
+    {
+        return true;
+    }
+    
+    return false;
 }
 
 template <class Type>
@@ -103,11 +156,9 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inS
         inOrderTraversal(inStart->getRightChild());
     }
     
-    else
-    {
-        return;
-    }
 }
+
+
 
 /*
  Pre order traversal goes in the order Root, Left, Right
@@ -340,6 +391,30 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
                     current->getLeftChild()->setRootPointer(previous);
                 }
             }
+        }
+        
+        template <class Type>
+        int BinarySearchTreeNode<Type> :: getSize()
+        {
+            return calculateHeight(root);
+        }
+        
+        template <class Type>
+        int BinarySearchTreeNode<Type> :: getHeight()
+        {
+            return calculateHeight(root);
+        }
+        
+        template <class Type>
+        bool BinarySearchTreeNode<Type> :: isBalanced()
+        {
+            return isBalanced(root);
+        }
+        
+        template <class Type>
+        bool BinarySearhTreeNode<Type> :: isComplete()
+        {
+            return isComplete(root);
         }
     }
 }
