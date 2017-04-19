@@ -261,7 +261,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
         }
     }
     
-    template <class Typee>
+    template <class Type>
     void BinarySearchTree<Type> :: remove(Type getRidOfMe)
     {
         if(root == nullptr)
@@ -397,6 +397,11 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
                     previous->setRightChild(current->getLeftChild());
                     current->getLeftChild()->setRootPointer(previous);
                 }
+            }
+            
+            if(removeMe == nullptr || removeMe->getRootPointer() == nullptr)
+            {
+                setRoot(removeMe);
             }
         }
         
