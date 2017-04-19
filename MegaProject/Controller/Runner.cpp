@@ -12,5 +12,6 @@ int main()
 {
     StructureController * app; new StructureController();
     app->start();
+    return 0;
 }
 

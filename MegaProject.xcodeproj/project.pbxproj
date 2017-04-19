@@ -45,6 +45,7 @@
 		1C2FCFB81E6481E9008AE69A /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = ../../../../.Trash/Model/Timer.hpp; sourceTree = "<group>"; };
 		1C2FCFBA1E648D24008AE69A /* BiDirectionalNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BiDirectionalNode.h; path = Model/BiDirectionalNode.h; sourceTree = "<group>"; };
 		1C54F8C11E69CA2300AB8193 /* DoubleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoubleList.h; path = InheritsFromDoublyLinked/DoubleList.h; sourceTree = "<group>"; };
+		1C646E311EA7B17A002154B6 /* AVLTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVLTree.h; sourceTree = "<group>"; };
 		1C64F2781E48D41400FDBFC0 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C65ED901E67290F00C79527 /* DoublyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoublyLinkedList.h; path = TypedDataSample/DoublyLinkedList.h; sourceTree = "<group>"; };
 		1C65ED921E6730C800C79527 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 				1C216ED61E76DA4C0069ECF3 /* Meme.hpp */,
 				1CE5E9A51E841E4B00AB632B /* Array.h */,
 				1C9326D81E9D24F000037B24 /* Tree.h */,
+				1C646E311EA7B17A002154B6 /* AVLTree.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";

@@ -9,10 +9,10 @@
 #ifndef StructureController_hpp
 #define StructureController_hpp
 
-#include "../Model/Node.hpp"
+#include "Node.h"
 #include "Timer.hpp"
 #include "IntNodeArray.hpp"
-#include "../Model/List.hpp"
+#include "List.h"
 #include "../Model/DoubleList.hpp"
 #include "../Model/Stack.hpp"
 #include "../Model/Queue.hpp"
