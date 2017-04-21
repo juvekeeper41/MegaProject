@@ -114,6 +114,18 @@ BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinarySe
 }
 
 template <class Type>
+BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinarySearchTreeNode<Type> * current)
+{
+    BinarySearchTreeNode<Type> * temp = current;
+    while(temp->getRightChild() != nullptr)
+    {
+        temp = temp->getRightChild();
+    }
+    
+    return temp;
+}
+
+template <class Type>
 int BinarySearchTree<Tree> :: calculateSize(BinarySearchTreeNode<Type> * start)
 {
     int count = 1;
