@@ -114,6 +114,22 @@ BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinarySe
 }
 
 template <class Type>
+Type BinarySearchTree<Type> :: findMinimum()
+{
+    assert(root != nullptr);
+    BinarySearchTreeNode<Type> * smallest = getLeftMostChild(root);
+    return smallest->getNodeData();
+}
+
+template <class Type>
+Type BinarySearchTree<Type> :: findMaximum()
+{
+    assert(root != nullptr);
+    BinarySearchTreeNode<Type> * largest = getLeftMostChild(root);
+    return largest->getNodeData();
+}
+
+template <class Type>
 BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinarySearchTreeNode<Type> * current)
 {
     BinarySearchTreeNode<Type> * temp = current;
