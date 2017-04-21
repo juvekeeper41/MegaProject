@@ -102,6 +102,18 @@ void BinarySearchTree<Type> :: inOrderTraversal()
 }
 
 template <class Type>
+BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinarySearchTreeNode<Type> * current)
+{
+    BinarySearchTreeNode<Type> * temp = current;
+    while(temp->getLeftChild() != nullptr)
+    {
+        temp = temp->getLeftChild();
+    }
+    
+    return temp;
+}
+
+template <class Type>
 int BinarySearchTree<Tree> :: calculateSize(BinarySearchTreeNode<Type> * start)
 {
     int count = 1;
