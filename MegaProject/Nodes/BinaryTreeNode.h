@@ -47,6 +47,9 @@ public:
     bool contains(Type value);
     void insert(Type itemToInsert);
     void remove(Type value);
+    
+    Type findMinimum();
+    Type findMaximum();
 };
 
 template <class Type>
