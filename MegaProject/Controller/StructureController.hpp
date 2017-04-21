@@ -13,7 +13,7 @@
 #include "Timer.hpp"
 #include "IntNodeArray.hpp"
 #include "List.h"
-#include "../Model/DoubleList.hpp"
+#include "DoubleList.h"
 #include "../Model/Stack.hpp"
 #include "../Model/Queue.hpp"
 #include "../Model/CircularlyLinkedList.hpp"
