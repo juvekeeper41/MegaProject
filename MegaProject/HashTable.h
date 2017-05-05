@@ -32,7 +32,14 @@ public:
     void add(Type data)
     bool remove(Type data);
     void displayContents();
+    long getSize();
 };
+
+template <class Type>
+HashTable<Type> :: getSize()
+{
+    return size;
+}
 
 template <class Type>
 HashTable<Type> :: HashTable()
@@ -50,7 +57,7 @@ HashTable<Type> :: ~HashTable()
 }
 
 template <class Type>
-int HashTable<TYpe> :: getNextPrime()
+int HashTable<Type> :: getNextPrime()
 {
     int nextPrime = (this->capacity * 2) + 1;
     
@@ -88,6 +95,80 @@ bool HashTable<Type> :: isPrime(long candidateNumber)
         }
         return true;
     }
+}
+
+template <class Type>
+bool HashTable<Type> :: remove(Type data)
+{
+    bool removed = false;
+    
+    /*for (long index = 0; index < capacity; index++)
+    {
+        if(hashTableStorage[index] !=  nullptr && hashTableStorage[index]->getData() == data)
+        {
+            hashTableStorage[index] = index = nullptr;
+            remove = true;
+        }
+    }
+     
+     */
+    
+    HashNode<Type> * find(data);
+    long hashIndex = findPosition(find);
+    if(hashTableStorage[hashIndex] != nullptr)
+    {
+        hashTableStorage[hashIndex] = nullptr;
+        removed = true;
+    }
+    
+    this->size--;
+    
+    return removed;
+}
+
+template <class Type>
+void HashTable<Type> :: displayContents()
+{
+    for(long index = 0; index < capacity; index++)
+    {
+        if(hashTableStorage[index] != nullptr)
+        {
+            cout << index << ":" << hashTableStorage[index]->getData() << endl;
+        }
+    }
+}
+
+template <class Type>
+void HashTable<Type> :: resize()
+{
+    long updatedCapacity = nextPrime();
+    HashNode<Type> * * tempStorage = new HashNode<Type> * [updatedCapacity];
+    
+    std :: fill_n(tempStorage, updatedCapacity, nullptr);
+    
+    long oldCapacity = this->capacity;
+    this->capacity = updatedCapacity;
+    
+    for(long index = 0; index < oldCapacity; index++)
+    {
+        if(hashTableStorage[index] != nullptr)
+        {
+            HashNode<Type> * temp = hashTableStorage[index];
+            
+            long position = findPosition(temp);
+            if(tempStorage[position] == nullptr)
+            {
+                tempStorage[position] = temp;
+            }
+            else
+            {
+                long updatedPosition = handleCollision(temp, position)
+                tempStorage[updatedPosition] = temp;
+            }
+        }
+    }
+    
+    hashTableStorage = tempStorage;
 }
 
 template <class Type>
